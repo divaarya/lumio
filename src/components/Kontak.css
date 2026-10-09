@@ -1,0 +1,76 @@
+.kontak {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 56px 6vw 48px;
+  text-align: center;
+}
+
+.kontak h2 {
+  font-size: clamp(30px, 4.5vw, 48px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+
+.kontak-sub {
+  color: #4b5563;
+  font-size: 18px;
+  margin-bottom: 36px;
+}
+
+.kontak-tombol {
+  display: inline-block;
+  background: var(--warna-utama);
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.kontak-tombol:hover {
+  background: #111111;
+}
+
+.kontak-daftar {
+  margin-top: 64px;
+  border-top: 1px solid #d1d5db;
+  text-align: left;
+}
+
+.kontak-daftar li {
+  display: grid;
+  grid-template-columns: 24px 110px 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 0;
+  border-bottom: 1px solid #d1d5db;
+  overflow-wrap: anywhere;
+}
+
+.kontak-daftar svg {
+  color: var(--warna-utama);
+}
+
+.kontak-label {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.kontak-daftar a:hover {
+  color: var(--warna-utama);
+}
+
+@media (max-width: 600px) {
+  .kontak {
+    padding: 40px 6vw 40px;
+  }
+
+  .kontak-daftar li {
+    grid-template-columns: 24px 1fr;
+  }
+
+  .kontak-label {
+    display: none;
+  }
+}

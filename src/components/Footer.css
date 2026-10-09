@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  padding: 28px 6vw;
+  border-top: 1px solid #d1d5db;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.footer-nama {
+  font-weight: 700;
+  color: #111111;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+.footer-menu a:hover {
+  color: #111111;
+}
+
+@media (max-width: 700px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

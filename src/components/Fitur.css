@@ -1,0 +1,90 @@
+.fitur {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 72px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 6vw;
+}
+
+.fitur-kepala {
+  position: sticky;
+  top: 120px;
+  align-self: start;
+}
+
+.fitur-label {
+  font-size: 14px;
+  color: var(--warna-utama);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.fitur-kepala h2 {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.fitur-sub {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.fitur-daftar {
+  border-bottom: 1px solid #d1d5db;
+}
+
+.fitur-item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 20px;
+  padding: 32px 0;
+  border-top: 1px solid #d1d5db;
+}
+
+.fitur-ikon {
+  color: var(--warna-utama);
+  margin-top: 2px;
+}
+
+.fitur-item h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.fitur-item p {
+  color: #4b5563;
+  line-height: 1.6;
+  max-width: 460px;
+}
+
+.fitur-tag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.fitur-tag li {
+  font-size: 13px;
+  color: #111111;
+  background: var(--warna-aksen);
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+
+@media (max-width: 800px) {
+  .fitur {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 40px 6vw;
+  }
+
+  .fitur-kepala {
+    position: static;
+  }
+}

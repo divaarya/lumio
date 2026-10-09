@@ -1,0 +1,88 @@
+.faq {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 72px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 6vw;
+}
+
+.faq-label {
+  font-size: 14px;
+  color: var(--warna-utama);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.faq-kepala h2 {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.faq-daftar {
+  border-bottom: 1px solid #d1d5db;
+}
+
+.faq-baris {
+  border-top: 1px solid #d1d5db;
+}
+
+.faq-tanya {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  color: #111111;
+  cursor: pointer;
+}
+
+.faq-tanda {
+  font-size: 22px;
+  color: var(--warna-utama);
+}
+
+.faq-jawab {
+  padding-bottom: 24px;
+  max-width: 520px;
+  color: #4b5563;
+  line-height: 1.7;
+}
+.faq-foto {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-top: 28px;
+}
+
+.faq-lanjut {
+  margin-top: 16px;
+  font-size: 15px;
+  color: #4b5563;
+}
+
+.faq-lanjut a {
+  color: var(--warna-utama);
+  font-weight: 500;
+  border-bottom: 1px solid var(--warna-utama);
+}
+
+@media (max-width: 800px) {
+  .faq {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 40px 6vw;
+  }
+}

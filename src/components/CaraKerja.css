@@ -1,0 +1,68 @@
+.cara {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 6vw;
+}
+
+.cara h2 {
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 56px;
+}
+
+.cara-garis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  border-top: 1px solid #d1d5db;
+}
+
+.cara-langkah {
+  position: relative;
+  padding-top: 28px;
+}
+
+.cara-titik {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--warna-utama);
+}
+
+.cara-langkah h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.cara-langkah p {
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .cara {
+    padding: 40px 6vw;
+  }
+
+  .cara-garis {
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-top: none;
+    border-left: 1px solid #d1d5db;
+  }
+
+  .cara-langkah {
+    padding: 0 0 32px 28px;
+  }
+
+  .cara-titik {
+    top: 6px;
+    left: -5px;
+  }
+}

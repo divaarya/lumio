@@ -1,0 +1,58 @@
+.unggul {
+  background: var(--warna-utama);
+  color: #ffffff;
+}
+
+.unggul-isi {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 6vw;
+}
+
+.unggul-isi h2 {
+  max-width: 560px;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+}
+
+.unggul-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.unggul-item {
+  padding: 32px 28px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.unggul-item h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.unggul-item p {
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+@media (max-width: 700px) {
+  .unggul-isi {
+    padding: 40px 6vw;
+  }
+
+  .unggul-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .unggul-item {
+    padding: 24px 20px;
+  }
+}
