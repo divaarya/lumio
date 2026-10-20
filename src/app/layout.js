@@ -16,7 +16,7 @@ export async function generateMetadata() {
     "Kelola karyawan, absensi, cuti, dan laporan perusahaan dengan lebih mudah bersama Lumio.";
 
   return {
-    metadataBase: new URL("https://https://lumio-roan.vercel.app/"),
+    metadataBase: new URL("https://lumio-roan.vercel.app"),
 
     title,
     description,
