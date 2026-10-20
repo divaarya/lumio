@@ -9,19 +9,46 @@ const dmSans = DM_Sans({
 
 export async function generateMetadata() {
   const site = await getSite();
+
+  const title = site.seo.metaTitle || "Lumio - HRIS Modern";
+  const description =
+    site.seo.metaDescription ||
+    "Kelola karyawan, absensi, cuti, dan laporan perusahaan dengan lebih mudah bersama Lumio.";
+
   return {
-    title: site.seo.metaTitle,
-    description: site.seo.metaDescription,
+    metadataBase: new URL("https://https://lumio-roan.vercel.app/"),
+
+    title,
+    description,
+
     openGraph: {
-      title: site.seo.metaTitle,
-      description: site.seo.metaDescription,
-      images: site.seo.ogImage ? [site.seo.ogImage] : [],
+      title,
+      description,
+      siteName: "Lumio",
+      locale: "id_ID",
+      type: "website",
+      images: [
+        {
+          url: "/opengraph-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Lumio - Kelola Tim Kerja dengan Lebih Mudah",
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/opengraph-image.png"],
     },
   };
 }
 
 export default async function RootLayout({ children }) {
   const site = await getSite();
+
   return (
     <html lang="id">
       <body
